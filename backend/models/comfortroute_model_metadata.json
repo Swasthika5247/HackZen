@@ -1,0 +1,29 @@
+{
+  "model_type": "CatBoostClassifier",
+  "features": [
+    "route",
+    "stop_id",
+    "route_id",
+    "latitude",
+    "longitude",
+    "hour_sin",
+    "hour_cos",
+    "day_sin",
+    "day_cos"
+  ],
+  "categorical_features": [
+    "route",
+    "stop_id",
+    "route_id"
+  ],
+  "low_threshold": 4.0,
+  "high_threshold": 9.0,
+  "best_iterations": 479,
+  "classes": [
+    "High",
+    "Low",
+    "Moderate"
+  ],
+  "dataset": "AC Transit APC sample, February 2019",
+  "limitation": "Experimental relative passenger-load classification; not validated for live or future bus crowd forecasting."
+}
